@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bouncy Balls</title>
+    <style media="screen">
+      #gameScreen{
+        background-color: grey;
+        border : 1px solid black;
+      }
+      img{
+        display : none;
+      }
+    </style>
+    <style>
+      body{
+        background-color: black;
+      }
+    </style>
+    </head>
+  <body>
+    <img id="img_ball" src="assets/images/ball.png">
+    <img id="img_brick" src="assets/images/goal.png">
+    <canvas id="gameScreen" width="1700" height="700" ></canvas>
+
+    <script src="src/index.js" charset="utf-8" type="module"></script>
+  </body>
+</html>
