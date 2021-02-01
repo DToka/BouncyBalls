@@ -96,7 +96,7 @@ export function buildLevel(game,level){
     let objectStar = new Polygon(game,starPos,starPoints,10,10,0,-0.5);
     let objectTest = new Polygon(game,object1Pos,object1Points,10,10,0,-0.2);
     let object2 = new Polygon(game,object2Pos, object2Points,10,10,0,0.2);
-    let wall = new Wall(game,300,200,500,-100);
+    //let wall = new Wall(game,300,200,500,-100);
     gameObjects = [
       mainBall,
       secondBall,

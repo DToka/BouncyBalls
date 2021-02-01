@@ -47,7 +47,7 @@ export function detectCollision(gameObject1, gameObject2){
     var minDistance=99999999;
     var lineNum=0;
     for(var i=0;i<gameObject2.points.length;i++){
-        console.log(gameObject2.points[(i+1)%gameObject2.points.length]);
+        //console.log(gameObject2.points[(i+1)%gameObject2.points.length]);
         checkPoint=vectorMath.getClosestPosition(gameObject1.position,vectorMath.add(gameObject2.position,gameObject2.points[i]),vectorMath.add(gameObject2.position,gameObject2.points[(i+1)%gameObject2.points.length]));
         distanceToLine=vectorMath.magnitude(vectorMath.sub(checkPoint,gameObject1.position));
         if(distanceToLine<minDistance){
